@@ -5,12 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>Word Game</title>
 </head>
 
 <body>
-    <h1>Press any key to get started!</h1>
-    <p>Wins: (# of times user guessed the word correctly)</p>
+    <header id="main-header">
+        <h1 id="title">ARE YOU POKESMART?</h1>
+        <p id="caption">Press any key to get started!</p>
+    </header>
+    <div class="main-container">
+
+        <div id="pokemon">
+            <img src="./assets/images/250px-150Mewtwo.png">
+        </div>
+
+        <div id="game">
+            <div>
+                <h2>WHO'S THAT POKEMON?</h2>
+                <p>*HINT: Pokemon number 150*
+            </div>
+            <div>
+                <p id="hangman">_ _ _ _ _ _</p>
+            </div>
+            <ul>
+                <li>LETTERS USED: </li>
+                <li>ATTEMPTS: </li>
+                <li>WINS: </li>
+                <li>LOSSES: </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright @</p>
+    </footer>
 
     <script src="./assets/javascript/game.js">
     </script>
