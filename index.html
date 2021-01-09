@@ -1,55 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <title>Word Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Guessing Game</title>
 </head>
-
 <body>
-    <header id="main-header">
-        <h1 id="title">ARE YOU POKESMART?</h1>
-        <p id="caption">Press any key to get started!</p>
-    </header>
-    <div class="main-container">
+        <div class="jumbotron" style="background-color: red; color: white">
+            <h1 id="title">Who's that pokemon?</h1>
+            <p id="caption">Press any letter to get started!</p>
+          </div>
+        <div class="main-container">
 
-        <div id="pokemon">
-            <img src="./assets/images/250px-150Mewtwo.png">
-        </div>
-
-        <div id="game">
-            <div>
-                <h2>WHO'S THAT POKEMON?</h2>
-                <p>*HINT: Pokemon number 150*
+            <div id="pokemon">
+                <img id="pokeMonster" src="" alt="pokemon">
             </div>
-            <div>
-                <p id="hangman">_ _ _ _ _ _</p>
+            <div id="game">
+                <div>
+                    <h2>WHO'S THAT POKEMON?</h2>
+                </div>
+                <div>
+                    <p id="dashes"></p>
+                </div>
+                <div class="scoreboard">
+                    <ul class="scores">
+                        <li>LETTERS USED: <span id="used"></span></li>
+                        <li>ATTEMPTS: <span id="attempts"></span></li>
+                        <li>WINS: <span id="wins"></span></li>
+                        <li>LOSSES: <span id="losses"></span></li>
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <li>LETTERS USED: </li>
-                <li>ATTEMPTS: </li>
-                <li>WINS: </li>
-                <li>LOSSES: </li>
-            </ul>
         </div>
-    </div>
-
-    <footer>
-        <p>Copyright @</p>
-    </footer>
-
-    <script src="./assets/javascript/game.js">
-    </script>
+    <script src="./assets/javascript/game.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
-
 </html>

@@ -1,34 +1,55 @@
-#main-header {
+.jumbotron {
     text-align: center;
-    background-color: red;
-    color: white;
     padding: 60px;
     border-bottom: black 20px solid;
     font-family: 'Montserrat', sans-serif;
 }
+img {
+    object-fit: cover;
+}
 #caption {
-    font-size: 20px;
+    font-size: 2.5vw;
 }
 #title {
     font-weight: bolder;
-    font-size: 60px;
+    font-size: 5vw;
 }
 .main-container {
-    color: black;
-    text-align: left;
-    margin-top: 100px;
+    display: flex;
+    padding-top: 100px;
 }
-#hangman {
+#dashes {
     font-weight: bolder;
     font-size: 80px;
 }
+#game {
+    flex-basis: 50%;
+    text-align: center;
+}
 #pokemon {
-    float: left;
-    margin-left: 275px;
-    margin-right: 150px;
+    flex-basis: 50%;
+    text-align: center;
+}
+.scoreboard{
+    display: flex;
+    justify-content: center;
+}
+.scores{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 footer {
     text-align: center;
     font-size: 10px;
-    padding-top: 50px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+@media (max-width: 768px){
+    .main-container{
+        flex-direction: column;
+        align-items: center;
+    }
 }
