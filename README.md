@@ -1,4 +1,4 @@
-# Guessing Game
+# Guessing Game (Pokemon Edition)
 
 ## What is it?
 Guessing Game is just like hangman except we won't be hanging people in this game. Instead, test your knowledge on some of the people that pop-up. 
